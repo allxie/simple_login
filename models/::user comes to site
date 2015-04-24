@@ -1,0 +1,15 @@
+//user comes to site
+//user signs up
+//user fills out a form with email and password (x2)
+//user submit form:
+db.User.createSecure(email, password).then(fn)
+
+//user logs in
+//user fills in form with email and password
+//authenticate user
+
+db.User.authenticate(email, password).then(fn)
+
+//update a user
+db.user.find(x) --> returns an instance of a user
+db.user.findAll() --> you can do where here... .All() is all. class method that returns all of them
